@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "start-storybook",
+    "test": "jest --colors"
+  },
+  "jest": {
+    "preset": "react-zeroconfig"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@storybook/react": "^5.1.1",
+    "husky": "^2.4.0",
+    "jest": "^24.8.0",
+    "react-zeroconfig": "^3.3.0-alpha.1"
+  }
+}
